@@ -48,7 +48,9 @@ img {
 .limit-width {
   width: 100%;
   max-width: 800px;
+  padding: 0 10px;
   margin: auto;
+  box-sizing: border-box;
 }
 
 [vi-nav] {
@@ -89,6 +91,7 @@ img {
   width: 100%;
   padding: 0;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 .list-item {
@@ -101,6 +104,12 @@ img {
 
 .list-item:hover {
   background-color: #f4f4f4;
+}
+
+.list-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .list-item-date {
