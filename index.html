@@ -1,18 +1,23 @@
 ---
 layout: default
-title: 我的Blog
 ---
 
-<h2>{{ page.title }}</h2>
+<!--<div class="self-introduction">-->
+<!--    <div class="avatar">-->
+<!--        <img src="static/images/avatar.jpg" alt="avatar">-->
+<!--    </div>-->
+<!--</div>-->
 
-<p>最新文章</p>
 
-<ul>
+<ul class="list shadow">
     {% for post in site.posts %}
-    <li>
-        {{ post.date | date_to_string }}
+    <li class="list-item">
         <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
+
+            <div class="list-item-date signature">
+                {{ post.date | date: "%Y-%m-%d" }}
+            </div>
         </a>
     </li>
     {% endfor %}

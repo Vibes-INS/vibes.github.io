@@ -1,10 +1,30 @@
 ---
 layout: default
-title: first
+title: 我在 GitHub Pages 上的第一篇文章
 ---
 
-<h2>{{ page.title }}</h2>
+<section class="shadow article">
+    <h2>{{ page.title }}</h2>
 
-<p>我的第一篇文章</p>
+    <p>
+        你好，很高兴你能在繁华的网络世界发现这一网站，并且注意到了我。<br/>
+        我先作一个自我介绍，我是一个Web工程师。从今天开始，我会在这个站点分享我的所见所闻、我所学到的知识以及一些有趣的事情。
+    </p>
+    <p>
+        原来一直使用知乎发表文章，但是无奈知乎的文本编辑器的体验并不好...
+        就索性自己搭建一个博客。<br/>
+        因此，可以在自己搭建的博客页面中，得到高度的自由度。
 
-<p>{{ page.date | date_to_string }}</p>
+        <br/>
+        我甚至可以在此发布我的小游戏。
+
+        <br/>
+        一开始这段时间可能会比较简陋。
+    </p>
+
+    <p>
+        希望这个网站不会无人问津吧！
+    </p>
+
+    <p class="date">{{ page.date | date_to_string }}</p>
+</section>
