@@ -1,3 +1,8 @@
+---
+layout: article
+title: 重写一下js内置的 Array 方法
+---
+
 # 重写一下js内置的 Array 方法
 
 ### Reduce:
